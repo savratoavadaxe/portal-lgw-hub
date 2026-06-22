@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老哥社区 · 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf6f0;
+            color: #2c2b28;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            line-height: 1.75;
+            padding: 2rem 1.2rem;
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            margin-top: 2.2rem;
+            margin-bottom: 0.8rem;
+            color: #3a3530;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            text-align: center;
+            margin-top: 1.8rem;
+            margin-bottom: 0.3rem;
+            border-bottom: 1px solid #ddd6cb;
+            padding-bottom: 0.6rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            border-left: 4px solid #b7a99a;
+            padding-left: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        .subhead {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #7a7165;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+            letter-spacing: 0.04em;
+        }
+
+        .hero-box {
+            background: #ede7de;
+            padding: 2rem 2rem 1.8rem;
+            border-radius: 20px;
+            margin: 1.8rem 0 2.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+
+        .hero-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.6rem;
+            margin: 2rem 0 1.5rem;
+        }
+
+        .feature-item {
+            flex: 1 1 220px;
+            background: #fefcf9;
+            border-radius: 18px;
+            padding: 1.4rem 1.2rem;
+            border: 1px solid #e3dbd0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            transition: box-shadow 0.2s;
+        }
+
+        .feature-item:hover {
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+        }
+
+        .feature-item h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            margin-bottom: 0.6rem;
+            color: #4d4540;
+        }
+
+        .feature-item p {
+            font-size: 0.98rem;
+            margin-bottom: 0;
+        }
+
+        .callout {
+            background: #f0ebe2;
+            border-left: 6px solid #b7a99a;
+            padding: 1.2rem 1.6rem;
+            margin: 2.2rem 0;
+            border-radius: 0 14px 14px 0;
+            font-size: 1rem;
+        }
+
+        .callout strong {
+            color: #4d3f36;
+        }
+
+        .faq-item {
+            margin: 1.6rem 0;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px dashed #ddd6cb;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 600;
+            color: #4d4540;
+            margin-bottom: 0.2rem;
+            font-size: 1.05rem;
+        }
+
+        .faq-a {
+            margin-left: 1rem;
+            color: #4f4a44;
+        }
+
+        .discreet-link {
+            color: #6b5f53;
+            text-decoration: none;
+            border-bottom: 1px dotted #c5b9ab;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .discreet-link:hover {
+            color: #2c2b28;
+            border-bottom: 1px solid #2c2b28;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd6cb;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8a7f72;
+            margin-top: 2.8rem;
+            letter-spacing: 0.03em;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1.2rem 0.9rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .hero-box {
+                padding: 1.4rem 1.2rem;
+            }
+
+            .feature-grid {
+                gap: 0.8rem;
+            }
+
+            .feature-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>老哥社区</h1>
+    <p class="subhead">一份简明的产品说明 · 用于快速了解网站用途</p>
+
+    <!-- 摘要 / 引入 -->
+    <div class="hero-box">
+        <p>如果你在寻找一个能集中浏览各类信息、话题与资源的地方，<strong>老哥社区</strong>或许能帮你省去一些四处翻找的功夫。这个站点以聚合与导航为核心思路，把散落在网络各个角落的内容整理进清晰的分类中——无论是实用工具、兴趣小组、知识模块，还是你偶然想起的某个老网站，都有可能在这里找到一条索引。它不是一个传统的社交网络，更像一个由用户共同维护、指向外部内容的“目录墙”。</p>
+        <p style="margin-top:1rem;">简单说：你不需要注册或登录就能直接浏览大部分内容；网站本身不生产原始信息，而是充当一个发现与跳转的起点。下面会从几个方面说明它的特点与用法。</p>
+    </div>
+
+    <!-- 亮点 / 特点 -->
+    <h2>几个值得留意的特点</h2>
+    <div class="feature-grid">
+        <div class="feature-item">
+            <h3>分类清晰，覆盖广</h3>
+            <p>从技术文档、设计资源，到冷门百科、影视讨论，条目按标签和主题排列，减少信息过载。每个分类都有人持续更新推荐链接。</p>
+        </div>
+        <div class="feature-item">
+            <h3>轻量，无需登录</h3>
+            <p>大多数页面公开可见，没有强制注册或付费墙。你随时打开都可以直接浏览，把精力花在看内容上，而不是处理账号流程。</p>
+        </div>
+        <div class="feature-item">
+            <h3>社区驱动的筛选</h3>
+            <p>条目由成员提交并经过基本审核，质量相对有保障。相比搜索引擎的随机结果，这里的推荐带有一定的人工筛选痕迹。</p>
+        </div>
+        <div class="feature-item">
+            <h3>保持克制的更新</h3>
+            <p>不追求日更数量，更看重长期有效链接。每个条目都附有简述，方便你判断是否值得点开。</p>
+        </div>
+    </div>
+
+    <!-- 使用建议 + 引用块 -->
+    <h2>使用建议</h2>
+    <p>如果你只是偶尔需要找某个类型的网站，可以直接在分类列表里按图索骥。如果你是重度信息收集者，不妨把<a href="https://portal-lgw.com" class="discreet-link">老哥社区</a>当作一个备用入口——它不会取代你的书签或搜索引擎，但在你忘记某个网站名称、或者想看看某个话题下有哪些值得逛的地方时，它往往能提供一些线索。社区也鼓励成员在发现失效链接或新资源时顺手反馈，让目录保持活力。</p>
+
+    <div class="callout">
+        <strong>一点说明：</strong> 社区本身不托管任何侵权或违法内容，所有链接均指向第三方站点。你在访问外部链接时，建议留意目标网站的信誉与安全。同时，本站不收集用户隐私信息，也不推送广告弹窗。
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <h2>常见疑问 · 摘要</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">我需要注册才能看内容吗？</p>
+        <p class="faq-a">不需要。除少数需要提交条目的功能外，浏览和搜索完全开放。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">链接打不开或失效怎么办？</p>
+        <p class="faq-a">社区有报错机制，你可以在对应页面下方标记失效，维护人员会定期清理或替换。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">我能贡献自己发现的网站吗？</p>
+        <p class="faq-a">可以，目前采用审核制。提交后会有志愿者确认内容质量与安全性，通过后便会出现在相应分类中。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">这个社区和传统导航站有什么不同？</p>
+        <p class="faq-a">导航站通常由站长一人维护，而老哥社区的内容来源更分散，更新也更依赖集体参与。另外，它的条目描述往往更详细，带有使用场景说明。</p>
+    </div>
+
+    <!-- 可信但克制的访问引导 -->
+    <hr>
+    <p style="font-size:1rem; text-align:center; max-width:600px; margin:0 auto;">
+        如果你觉得上述描述符合你的需要，不妨直接前往 <a href="https://portal-lgw.com" class="discreet-link">老哥社区</a> 看一眼分类列表。信息量不算大，但每一条都经过挑选——至少值得花几分钟随便翻翻。
+    </p>
+
+    <div class="footer-note">
+        — 页面内容仅供参考，不代表网站官方立场 —
+    </div>
+
+</body>
+</html>
